@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proveway Task</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center min-h-100 bg-white page-container">
+        <div class="w-340">
+            <div class="d-flex align-items-center mb-18">
+                <div class="border-bottom w-100"></div>
+                <h4 class="font-weight-500 text-color-green text-nowrap mx-14">Bundle & Save</h4>
+                <div class="border-bottom w-100"></div>
+            </div>
+            <div class="border rounded mb-18 card p-20" id="discountOffer50" onclick="selectOffer('discountOffer50')">
+                <div class="d-flex">
+                    <input type="radio" id="singleItemSelect" name="offer" value="50"/>
+                    <label class="w-100">
+                        <div class="d-flex justify-content-between">
+                            <div class="ml-20">
+                                <p class="text-large">1 pair</p>
+                                <p class="text-large font-weight-500">DKK 195.00</p>
+                            </div>
+                            <div>
+                                <p></p>
+                                <p class="text-large text-uppercase">50% off</p>
+                            </div>
+                        </div>
+                
+                    </label>
+                </div>
+                <div class="mt-8" id="singleItemOffer"  style="display: none;">
+                    <div class="d-flex align-items-center">
+                        <span class="mr-8 mt-20">#1</span>
+                        <div class="w-70 mr-8">
+                            <label class="mb-8 text-label">Size</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="w-70">
+                            <label class="mb-8 text-label">Color</label>
+                            <select>
+                                <option>Red</option>
+                                <option>Green</option>
+                                <option>Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded mb-18 card active p-20" id="discountOffer40" onclick="selectOffer('discountOffer40')">
+                <div class="d-flex">
+                    <input type="radio" id="twoItemSelect" name="offer" value="40" checked />
+                    <label class="w-100">
+                        <div class="d-flex justify-content-between">
+                            <div class="ml-20">
+                                <p class="text-large">2 pair</p>
+                                <p class="text-large text-nowrap font-weight-500">DKK 245.00 <span
+                                        class="text-label text-line-through text-secondary text-nowrap mx-14">DKK 195.00</span></p>
+                            </div>
+                            <div>
+                                <p class="font-weight-600 text-color-green text-nowrap">Most Popular</p>
+                                <p class="text-large text-uppercase">40% off</p>
+                            </div>
+                        </div>
+                
+                    </label>
+                </div>
+                <div class="mt-8" id="twoItemOffer">
+                    <div class="d-flex align-items-center">
+                        <span class="mr-8 mt-20">#1</span>
+                        <div class="w-70 mr-8">
+                            <label class="mb-8 text-label">Size</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="w-70">
+                            <label class="mb-8 text-label">Color</label>
+                            <select>
+                                <option>Red</option>
+                                <option>Green</option>
+                                <option>Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-8">
+                        <span class="mr-8 mt-20">#2</span>
+                        <div class="w-70 mr-8">
+                            <label class="mb-8 text-label">Size</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="w-70">
+                            <label class="mb-8 text-label">Color</label>
+                            <select>
+                                <option>Red</option>
+                                <option>Green</option>
+                                <option>Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border rounded mb-18 card p-20" id="discountOffer60" onclick="selectOffer('discountOffer60')">
+                <div class="d-flex">
+                    <input type="radio" id="threeItemSelect" name="offer" value="60" />
+                    <label class="w-100">
+                        <div class="d-flex justify-content-between">
+                            <div class="ml-20">
+                                <p class="text-large">1 pair</p>
+                                <p class="text-large font-weight-500">DKK 195.00</p>
+                            </div>
+                            <div>
+                                <p></p>
+                                <p class="text-large text-uppercase">60% off</p>
+                            </div>
+                        </div>
+                
+                    </label>
+                </div>
+                <div class="mt-8" id="threeItemOffer" style="display: none;">
+                    <div class="d-flex align-items-center">
+                        <span class="mr-8 mt-20">#1</span>
+                        <div class="w-70 mr-8">
+                            <label class="mb-8 text-label">Size</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="w-70">
+                            <label class="mb-8 text-label">Color</label>
+                            <select>
+                                <option>Red</option>
+                                <option>Green</option>
+                                <option>Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-8">
+                        <span class="mr-8 mt-20">#2</span>
+                        <div class="w-70 mr-8">
+                            <label class="mb-8 text-label">Size</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="w-70">
+                            <label class="mb-8 text-label">Color</label>
+                            <select>
+                                <option>Red</option>
+                                <option>Green</option>
+                                <option>Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-8">
+                        <span class="mr-8 mt-20">#3</span>
+                        <div class="w-70 mr-8">
+                            <label class="mb-8 text-label">Size</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="w-70">
+                            <label class="mb-8 text-label">Color</label>
+                            <select>
+                                <option>Red</option>
+                                <option>Green</option>
+                                <option>Blue</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between">
+                <p class="text-secondary">Free 2 Day Shipping</p>
+                <p>Total : <span class="font-weight-500"> DKK 360.00</span></p>
+            </div>
+            <button class="btn btn-success font-weight-600 mt-24">+ Add to cart</button>
+            <p class="text-small text-right mt-8">&copy; Powered by Pumper</p>
+        </div>
+    </div>
+</body>
+
+</html>
